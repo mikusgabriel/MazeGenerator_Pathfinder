@@ -1,11 +1,13 @@
 #include <iostream>
 #include <string>
+#include <tuple>
 using namespace std;
 
 class Maze {
 public:
     int start_xAxis;
     int start_yAxis;
+    
 
 
     void RandPoint(bool Start_End) {
@@ -21,20 +23,18 @@ public:
 
         }
 
-
-        tuple<int, int> getStart() {
-            return (start_xAxis, start_yAxis)
-        }
-
-
-
-
-
-
     }
+    tuple<int, int> getStart() {
+        return { start_xAxis,start_xAxis };
+    }
+   
 
-
-
+    int get_xAxis() {
+        return start_xAxis;
+    }
+    int get_yAxis() {
+        return start_xAxis;
+    }
 
 
 
